@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 @SpringBootApplication
 public class DemoApplication {
 
-    @RequestMapping("/sayHello/{name}")
+    @RequestMapping("/hello/{name}")
     String sayHello(@PathVariable String name) {
 	System.out.println("SayHello");
         return "Hello " + name + "!!!";
     }
 
-    @RequestMapping("/sayGoodbye/{name}")
+    @RequestMapping("/goodbye/{name}")
     String sayGoodbye(@PathVariable String name) {
 	System.out.println("SayGoodBye");
         return "Goodbye " + name +"!!!";
