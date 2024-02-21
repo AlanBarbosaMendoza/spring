@@ -29,8 +29,8 @@ public class DemoApplication {
         return "Hello World!";
     }
 
-	@RequestMapping("/example")
-    String home() {
+    @RequestMapping("/example")
+    String example() {
 	System.out.println("Hello World Example");
         return "Hello World Example!";
     }
