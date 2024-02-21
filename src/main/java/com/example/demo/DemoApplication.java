@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoApplication {
 
     @RequestMapping("/sayHello/{name}")
-    String sayHello() {
+    String sayHello(@PathVariable String name) {
         return "Hello " + name + "!!!";
     }
 
     @RequestMapping("/sayGoodbye/{name}")
-    String sayGoodbye() {
+    String sayGoodbye(@PathVariable String name) {
         return "Goodbye " + name +"!!!";
     }
 
