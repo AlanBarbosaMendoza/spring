@@ -13,12 +13,20 @@ public class DemoApplication {
 
     @RequestMapping("/sayHello/{name}")
     String sayHello(@PathVariable String name) {
+	System.out.println("SayHello");
         return "Hello " + name + "!!!";
     }
 
     @RequestMapping("/sayGoodbye/{name}")
     String sayGoodbye(@PathVariable String name) {
+	System.out.println("SayGoodBye");
         return "Goodbye " + name +"!!!";
+    }
+
+@RequestMapping("/")
+    String home() {
+	System.out.println("Hello World");
+        return "Hello World!";
     }
 
 
