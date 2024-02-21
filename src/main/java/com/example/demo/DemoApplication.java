@@ -29,6 +29,12 @@ public class DemoApplication {
         return "Hello World!";
     }
 
+	@RequestMapping("/example")
+    String home() {
+	System.out.println("Hello World Example");
+        return "Hello World Example!";
+    }
+
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
